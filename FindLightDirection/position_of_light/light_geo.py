@@ -24,9 +24,9 @@ centres = ball.ThreeDCentre()[6].reshape(5,3)
 # directionss =d1.flatten()
 fig = plt.figure()
 ax = fig.add_subplot(projection='3d')
-scale = 1/(105.6/2650*30500)
+scale = 0.04150326797385621
 # possible1 = [651.,555.,529.8]*scale
-possible2 = [709.,511.,599.2]
+# possible2 = [709.,511.,599.2]
 
 
 def light_geos(dirctions):
@@ -56,9 +56,9 @@ def light_geos(dirctions):
 
 
 
-
-    ax.scatter(solution[0],solution[1],solution[2])
-    ax.scatter(0,0,1)
+    #
+    # ax.scatter(solution[0],solution[1],solution[2])
+    # ax.scatter(0,0,1)
 
     return lightpostion
 
@@ -71,5 +71,5 @@ def light_geos(dirctions):
 
 
 if __name__ == '__main__':
-    print(light_geos(ball.ThreeDCentre()[6].reshape(5,3),light.LightDirec(100)))
+    print(light_geos(light.LightDirec(126)))
     plt.show()

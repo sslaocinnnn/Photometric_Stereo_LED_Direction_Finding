@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 
 # realDia = 2650
 # realRedius = realDia/2
-scale = 1/(105.6/2650*30500)
+scale = 1/1908.2834645669293
 print(scale)
 
 
@@ -39,7 +39,7 @@ def LightDirec(Sub):
      Imag = cv.normalize(Imgaew[Sub], None, 0, 255, cv.NORM_MINMAX, dtype=cv.CV_8UC1)
 
 
-     for i in range(len(ballcentre)):
+     for i in range(5):
       centretonp = ballcentre[i]
       realraduis = realballraduis[i][0]
       corretcentre = correctballcentre[i]
@@ -60,7 +60,8 @@ def LightDirec(Sub):
       # plt.scatter(maxindex[0],maxindex[1])
       # plt.scatter(centretonp[0],centretonp[1],c='red')
       # plt.scatter(696,520, c='yellow')
-      # # plt.show()
+      # plt.show()
+
       Spot = maxindex
       corrtedindex = Spot[0]-696,Spot[1]-520
       print(corrtedindex)
@@ -145,7 +146,7 @@ def LightDirec(Sub):
 #     # y()
 #     # LightDirec(5)
 if __name__ == '__main__':
-    print(LightDirec())
+    print(LightDirec(126))
 
 
 
