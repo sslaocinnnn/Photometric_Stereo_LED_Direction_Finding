@@ -1,11 +1,8 @@
 import numpy as np
 
-from FindLightDirection.position_of_light import fiveballcentre as ball
-from FindLightDirection.position_of_light import fiveballlightdirection as light
-from scipy.linalg import lstsq
-from scipy.optimize import nnls
+from FindLightDirection import fiveballcentre as ball
+from FindLightDirection import fiveballlightdirection as light
 import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
 
 # c1 = ball.ThreeDCentre()[6].reshape(5,3)
 # d1 = light.LightDirec(100)

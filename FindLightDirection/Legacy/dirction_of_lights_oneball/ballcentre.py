@@ -1,6 +1,6 @@
 import numpy as np
 import cv2 as cv
-from FindLightDirection.dirction_of_lights_oneball import ReadTiFone
+from FindLightDirection import ReadTiFone
 
 # #These lines for reading SIF files
 # from FindLightDirection import ReadSIF

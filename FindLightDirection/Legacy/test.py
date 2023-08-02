@@ -25,7 +25,7 @@
 
 
 import matplotlib.pyplot as plt
-from FindLightDirection.dirction_of_lights_oneball import ballcentre, LightDirection as light
+from FindLightDirection import ballcentre, LightDirection as light
 
 ball = ballcentre.ThreeDCentre()
 centre = ball[0:2]

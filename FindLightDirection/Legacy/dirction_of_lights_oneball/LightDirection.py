@@ -1,9 +1,9 @@
 import numpy as np
 # from FindLightDirection import ReadSIF
-from FindLightDirection.dirction_of_lights_oneball import ballcentre
+from FindLightDirection import ballcentre
 import math
 from numpy import unravel_index
-from FindLightDirection.dirction_of_lights_oneball import ReadTiFone
+from FindLightDirection import ReadTiFone
 import cv2 as cv
 
 scale = 1/(105.6/2650*30500)
