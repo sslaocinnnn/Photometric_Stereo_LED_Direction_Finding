@@ -8,7 +8,7 @@ import tifffile
 
 
 image = []
-def readtif(pathoffiveballs = 'Tifs/FiveBalls.tif',pathofpositions = 'Tifs/PositionofBalls.tif',Centre =None):
+def readtif(pathoffiveballs = '/Users/nicolas/Desktop/MasterProject/TiF/01aug 2/_1/_1_MMStack_Pos0.ome.tif',pathofpositions = '/Users/nicolas/Desktop/MasterProject/TiF/01aug 2/ballposition/MMStack_Pos0.ome.tif',Centre =None):
 
     read_image = tifffile.imread(pathoffiveballs)
     read_positions = tifffile.imread(pathofpositions)

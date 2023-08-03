@@ -102,7 +102,7 @@ def function():
  return light_positionsnorm
 
 if __name__ == '__main__':
-   np.save('Directions_of_Lights',function())
+   np.save('/Users/nicolas/Desktop/MasterProject/TiF/',function())
 
 
 

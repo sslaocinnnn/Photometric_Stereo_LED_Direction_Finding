@@ -14,6 +14,7 @@ import cv2 as cv
 scale = 1/2443.1292504994863
 print(scale)
 
+R = np.array([0,0,1]).reshape((1,3))
 
 Imgaew = ReadTiF.readtif()
 ball = fiveballcentre.ThreeDCentre()
@@ -96,6 +97,7 @@ def LightDirec(Sub):
       dirc = np.array([deltax,deltay,deltaz])/mag
 
       direction = np.array(dirc.reshape(1,3))
+
       # plt.imshow(out)
       # plt.show()
       vectordirections.append(direction)
@@ -114,6 +116,10 @@ def LightDirec(Sub):
 
      vectors = np.array(vectordirections).reshape(5,3)
      print(vectors)
+
+
+
+
 
 
 

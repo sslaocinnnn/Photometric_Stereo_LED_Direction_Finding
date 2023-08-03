@@ -42,21 +42,25 @@ def light_geos(dirctions):
     #solution = nnls(A,B)
     # solution = np.linalg.lstsq(A,B)
     print(solution)
+    R = np.array([0,0,1])
 
 
 
     # for j in range(5):
     #  ax.plot([centres[j,0],d[j,0]*20],[centres[j,1],d[j,1]*20],[centres[j,2],d[j,2]*20])
     #
-    lightpostion = (solution[0],solution[1],solution[2])
+    # lightpostion = (solution[0],solution[1],solution[2])
+    Rt = R.reshape((3, 1))
+    L = (2 * (solution[0:3].dot(Rt) * (solution[0:3]))) - R
+    print(L)
 
 
 
-    #
+
     # ax.scatter(solution[0],solution[1],solution[2])
     # ax.scatter(0,0,1)
 
-    return lightpostion
+    return L
 
 
 
