@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import cv2 as cv
-from FindLightDirection.position_of_light.Tifs import ReadTiF
+import ReadTiF
 
 #camera hight 39.5cm position (0,0,1)
 #ballr = 2.54cm
@@ -26,6 +26,7 @@ normaliz = cv.normalize(image, None, 0, 255, cv.NORM_MINMAX,dtype=cv.CV_8UC1)
 print("Image data after Normalize:\n", normaliz)
 
 # plt.imshow(normaliz)
+# plt.gray()
 # plt.show()
 
 
@@ -37,7 +38,7 @@ def Findcentre():
 
  contours, hierarchy = cv.findContours(edge, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE)
  mask = np.zeros_like(normaliz)
- mask1 = cv.drawContours(mask, contours, 2, (255, 255, 255), -1)
+ mask1 = cv.drawContours(mask, contours, -1, (255, 255, 255), -1)
 
  # plt.imshow(mask1)
  # plt.show()
@@ -82,7 +83,7 @@ def Findcentre():
 
 
 
- # plt.imshow(mask,origin='lower')
+ # plt.imshow(mask,origin='upper')
  # plt.scatter(x,y)
  # plt.show()
 

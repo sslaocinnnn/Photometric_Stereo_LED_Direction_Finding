@@ -11,7 +11,7 @@ import numpy as np
 image = []
 def readtif(pathoffiveballs = 'ball13_2_MMStack_Pos0.ome.tif',pathofpositions = 'ball13_2_MMStack_Pos0.ome.tif',Centre =None):
 
-    read_image = np.array(tifffile.imread(pathoffiveballs))
+    read_image = tifffile.imread(pathoffiveballs)
     read_positions = tifffile.imread(pathofpositions)
     read_positions = sum(read_positions[0:12])
 

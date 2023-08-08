@@ -64,7 +64,7 @@ def function():
  plt.title('Unit Vectors of LEDs')
  plt.savefig('Unit Vectors of LEDs')
  plt.show()
-
+ #
  # fig = plt.figure()
  # ax = fig.add_subplot(projection='3d')
  # ax.scatter(X,Y,Z,c='yellow')
@@ -97,7 +97,7 @@ def function():
  # plt.savefig('Normalized Unit Vectors of LEDs with surface')
  # plt.show()
 
- np.save('/Users/nicolas/Desktop/MasterProject/TiF/aug.npy',light_positions)
+ np.save('/Users/nicolas/Desktop/MasterProject/TiF/aug08.npy',light_positions)
  return light_positions
 
 if __name__ == '__main__':

@@ -64,6 +64,7 @@ def LightDirec(Sub):
      # plt.scatter(index[0],index[1])
      # plt.scatter(twoDcentre[0],twoDcentre[1],c='red')
      # plt.scatter(696,520, c='yellow')
+     # plt.gray()
      # plt.show()
      #
      centre_shift = twoDcentre[0],twoDcentre[1]
@@ -180,7 +181,8 @@ def LightDirec(Sub):
 #     # y()
 #     # LightDirec(5)
 if __name__ == '__main__':
-    print(LightDirec(50))
+    for i in range(12):
+        LightDirec(i)
 
 
 
